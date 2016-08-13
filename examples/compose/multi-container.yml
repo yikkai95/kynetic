@@ -29,6 +29,7 @@ services:
        - AMBARI_REPO_URL=${AMBARI_REPO_URL}
        - HDP_REPO_URL=${HDP_REPO_URL}
     image: hdp/master
+    privileged: true
     networks:
      - dev
     hostname: master0
@@ -85,6 +86,7 @@ services:
        - AMBARI_REPO_URL=${AMBARI_REPO_URL}
        - HDP_REPO_URL=${HDP_REPO_URL}
     image: hdp/worker
+    privileged: true
     networks:
      - dev
     hostname: dn0
