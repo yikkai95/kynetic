@@ -4,7 +4,7 @@
   {
     "hive-site" : {
       "properties" : {
-        "javax.jdo.option.ConnectionURL" : "jdbc:postgresql://postgres.dev"
+        "javax.jdo.option.ConnectionURL" : "jdbc:postgresql://postgres.dev:5432/hive"
       }
     }
   }
