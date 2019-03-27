@@ -1,0 +1,17 @@
+{ "blueprint":"single-container-kylin",
+"default_password" : "dev",
+"configurations" : [
+  {
+    "hive-site" : {
+      "properties" : {
+        "javax.jdo.option.ConnectionURL" : "jdbc:postgresql://postgres.dev:5432/hive"
+      }
+    }
+  }
+],
+"host_groups":[
+  { "name":"host_group_1",
+    "hosts":[ { "fqdn":"master0.dev" } ]
+  }
+]
+}
